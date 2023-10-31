@@ -1,0 +1,93 @@
+// Importing other files
+@use '../globals/globals';
+@use '../globals/variables' as *;
+@use '../globals/mixins' as *;
+
+
+// Styling the skills component
+.skills {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+        gap: 4rem 6rem;
+        padding-top: 4rem;
+
+        i {
+            font-size: 8rem;
+            border: .25rem solid gray;
+            width: 100%;
+            padding: 2rem 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s ease-in-out;
+            margin: 0 auto;
+
+            &:first-of-type {
+                font-size: 11.25rem;
+            }
+
+            &:last-of-type {
+                font-size: 10.5rem;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+
+                &:first-of-type {
+                    color: orangered;
+                }
+
+                &:nth-child(2) {
+                    color: blue;
+                }
+
+                &:nth-child(3) {
+                    color: rgb(237, 227, 46);
+                }
+
+                &:nth-child(4) {
+                    color: rgb(217, 104, 123);
+                }
+
+                &:nth-child(5) {
+                    color: purple;
+                }
+
+                &:nth-child(6) {
+                    color: rgb(0, 201, 201);
+                }
+
+                &:nth-child(7) {
+                    color: rgb(201, 49, 10);
+                }
+
+                &:last-of-type {
+                    color: gray;
+                }
+            }
+
+        }
+
+        .icon-text {
+            border: .25rem solid gray;
+            width: 100%;
+            padding: 2rem 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s ease-in-out;
+            margin: 0 auto;
+            font: {
+                size: 2.5rem;
+                family: sans-serif;
+                style: normal;
+            }
+
+            &:hover {
+                color: rgb(0, 201, 201);
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// Importing the files of the global folder
+@use './globals/globals';
+@use './globals/variables' as *;
+@use './globals/mixins' as *;
+
+
+// Importing the files of the components folder
+@use './components/navbar';
+@use './components/intro';
+@use './components/about';
+@use './components/skills';
+@use './components/projects';
+@use './components/contact';
+@use './components/footer';
